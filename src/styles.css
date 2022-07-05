@@ -1,9 +1,8 @@
 body{
-    box-sizing: border-box;
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 .weather-app-wrapper {
-    max-width: 650px;
+    max-width: 600px;
     margin: 30px auto;
 }
 
