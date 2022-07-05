@@ -1,0 +1,24 @@
+body{
+    box-sizing: border-box;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+.weather-app-wrapper {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.weather-app {
+    padding: 20px;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
