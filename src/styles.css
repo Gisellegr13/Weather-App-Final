@@ -2,12 +2,13 @@ body{
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 .weather-app-wrapper {
-    max-width: 600px;
+    max-width: 700px;
+    height: 700px;
     margin: 30px auto;
 }
 
 .weather-app {
-    padding: 20px;
+    padding: 1.5rem 2rem;
     border: 1px solid #dadde1;
     border-radius: 10px;
 }

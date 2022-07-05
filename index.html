@@ -31,20 +31,22 @@
 <body>
 <div class="container">
     <div class="weather-app-wrapper">
-        <div class="weather-app">
+        <div class="weather-app ">
             <!--Current city display-->
             <div class="current-temperature">
                 <h1>Brandon</h1>
             </div>
             <!--Current temperature and description display-->
-            <div class=" row data-wind-humidity">
-                <div class="col-6">
+            <div class=" row  data-wind-humidity">
+                <div class="col-7">
                     <h2>
                         <!-- Icon of temperature description-->
                         <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon-big" class="float-left" alt=""/>
                         <!--Current temperature display-->
                         <span class="current-temperature">24</span>
-                        <span id="Celsius" class="units">°C</span> | <span id="Fahrenheit" class="units">°F</span>
+                        <small class="units-temperature">
+                            <span id="Celsius" class="units">°C</span> | <span id="Fahrenheit" class="units">°F</span>
+                        </small>
                         <!--Current description display-->
                         <div class="description-weather"> ️
                             <span class="description">Clear Skies</span>
@@ -52,7 +54,7 @@
                     </h2>
                 </div>
                 <!--Current wind and humidity at the right display-->
-                <div class="col-6">
+                <div class="col-5 mt-3">
                     <!--Current wind display-->
                     <div class="wind">
                         Wind:
@@ -66,9 +68,11 @@
                 </div>
             </div>
             <!--Forecast temperature display-->
-            <section class="forecast">
+            <section class="container-fluid forecast mt-3">
                 <div class="weekly-prediction">
-                    <div class="row">
+                    <div class="row align-items-center">
+                        <div class="col-1 left">
+                        </div>
                         <div class="col-2 tomorrow">Tom
                             <div class="col-2">33°</div>
                             <div class="col-2">☀️</div>
@@ -89,48 +93,53 @@
                             <div class="col-2">32°</div>
                             <div class="col-2">🌦️</div>
                         </div>
+                        <div class="col-1 right">
+                        </div>
                     </div>
                 </div>
             </section>
             <!--Search Engine and Time Display-->
             <section class="footer-app">
                 <!--Search Engine Display-->
-                <div class="search-engine">
-                    <form id="search-form" class="mb-3">
-                        <div class="row">
-                            <div class="col-5">
-                                <label>
-                                    <input
-                                            type="search"
-                                            class="form-control"
-                                            id="city-input"
-                                            placeholder=" Enter city..."
-                                    />
-                                </label>
+                <div class="row align-items-center date-search">
+                    <!--Time and Date Display-->
+                    <div class="col-4 time mt-4">
+                        🗓️ <span class="date">6-7-22</span> <br/>
+                        ⏲️<span class="hours">4:25</span>
+                        <span class="meridian">pm</span>
+                    </div>
+                    <div class="col-8 search-engine">
+                        <form id="search-form" class="m-3">
+                            <div class="row">
+                                <div class="col-8 mt-4">
+                                    <label>
+                                        <input
+                                                type="search"
+                                                class="form-control"
+                                                id="city-input"
+                                                placeholder=" Enter city..."
+                                        />
+                                    </label>
+                                </div>
+                                <!--Search button and Current Location Button-->
+                                <div class="col-4 mt-4">
+                                    <button type="submit" class="search-button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="submit" class="current-weather">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <!--Search button and Current Location Button-->
-                            <div class="col-2">
-                                <button type="submit" class="search-button">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                                <button type="submit" class="current-weather">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!--Time and Date Display-->
-                <div class="time">
-                    🗓️ <span class="date"></span> <br/>
-                    ⏲️<span class="hours"></span> <span class="meridian"></span>
+                        </form>
+                    </div>
                 </div>
             </section>
         </div>
         <!--Small Footer with information about code source-->
         <small class="footer">
-            <a class="githubLink" target="_blank" href="https://github.com/Gisellegr92/Weather-App.git">Open-source
-                code</a>
+            <a class="githubLink" target="_blank" href="https://github.com/Gisellegr92/Weather-App.git">
+                Open-source code</a>
             by Giselle Gutierrez
         </small>
     </div>
