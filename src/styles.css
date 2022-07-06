@@ -13,7 +13,6 @@ h1 {
 button {
     border-radius: 5px;
     border: 0;
-    /*box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.10);*/
     margin-right: 5px;
     padding: 5px;
 }
@@ -24,8 +23,24 @@ i {
     padding: 1px;
 }
 
+i.fa-solid.fa-location-dot, h1 {
+    display: inline-block;
+    margin: 0 1rem;
+
+    vertical-align: middle;
+}
+
+i.fa-solid.fa-location-dot {
+    font-size: larger;
+}
+
+.current-temperature {
+    text-align: center;
+
+}
+
 .weather-app-wrapper {
-    max-width: 700px;
+    max-width: 650px;
     height: 700px;
     margin: 50px auto;
 }
@@ -36,7 +51,19 @@ i {
     border-radius: 10px;
 }
 
+.description {
+    font-size: 20px;
+}
 
+.units-temperature {
+    position: relative;
+    font-size: 16px;
+    top: -4px;
+}
+
+.units-temperature:hover {
+    cursor: pointer;
+}
 
 
 

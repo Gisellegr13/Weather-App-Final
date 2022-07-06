@@ -35,6 +35,7 @@
             <!--Current city display-->
             <div class="current-temperature">
                 <h1>Brandon</h1>
+                <i class="fa-solid fa-location-dot"></i>
             </div>
             <!--Current temperature and description display-->
             <div class="row  data-wind-humidity">
@@ -103,12 +104,14 @@
                 <!--Search Engine Display-->
                 <div class="row align-items-center date-search">
                     <!--Time and Date Display-->
-                    <div class="col-5 time mt-4">
-                        🗓️ <span class="date">6-7-22</span> <br/>
-                        ⏲️<span class="hours">4:25</span>
+                    <div class="col-4 time mt-4">
+                        <i class="fa-solid fa-calendar-day "></i>
+                        <span class="date">6-7-22</span> <br/>
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="hours ">4:25</span>
                         <span class="meridian">pm</span>
                     </div>
-                    <div class="col-7 search-engine">
+                    <div class="col-8 search-engine px-0">
                         <form id="search-form" class="mt-4">
                             <div class="input-group">
                                 <input
@@ -120,9 +123,6 @@
                                 <!--Search button and Current Location Button-->
                                 <button type="submit" class="search-button p">
                                     <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                                <button type="submit" class="current-weather">
-                                    <i class="fa-solid fa-location-dot"></i>
                                 </button>
                             </div>
                         </form>
