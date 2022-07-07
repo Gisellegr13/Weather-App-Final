@@ -18,6 +18,13 @@ button {
     padding: 5px;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
 i {
     color: #d397ff;
     margin-left: 0;
@@ -27,7 +34,6 @@ i {
 i.fa-solid.fa-location-dot, h1 {
     display: inline-block;
     margin: 0 1rem;
-
     vertical-align: middle;
 }
 
@@ -73,7 +79,7 @@ input#city-input {
     border: 1px solid #dadde1;
     border-radius: 10px;
     box-shadow: 3px 10px 44px 0 rgba(0, 0, 0, 0.18);
-    background-image: url("../img/pink_green_illus.jpg");
+    background-image: url("../img/bright-colorful-sky.jpg");
     background-size: cover;
     font-weight: bolder;
 }
@@ -100,6 +106,11 @@ span.humidity-span {
     color: #e0115f;
 }
 
+a.githubLink {
+    text-decoration: none;
+    color: #C06CF0;
+}
+
 .units-temperature {
     position: relative;
     font-size: 16px;
@@ -116,7 +127,7 @@ span.humidity-span {
 }
 
 .day {
-    color: #d397ff;
+    color: #C06CF0;
     font-weight: bolder;
 }
 
