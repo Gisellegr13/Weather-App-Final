@@ -8,6 +8,7 @@ h1 {
     font-family: "Yeseva One", cursive;
     font-weight: 800;
     text-transform: capitalize;
+    color: #fd5382;
 }
 
 button {
@@ -18,7 +19,7 @@ button {
 }
 
 i {
-    color: #2e8aa5;
+    color: #d397ff;
     margin-left: 0;
     padding: 1px;
 }
@@ -34,8 +35,30 @@ i.fa-solid.fa-location-dot {
     font-size: larger;
 }
 
+i.fa-solid.fa-location-dot:hover {
+    cursor: pointer;
+}
+
+span.date {
+    color: #e0115f;
+}
+
+span.hours {
+    color: #e0115f;
+}
+
+span.meridian {
+    color: #e0115f;
+}
+
+input#city-input {
+    color: #e0115f;
+}
+
 .current-temperature {
     text-align: center;
+    color: #fd5382;
+    font-weight: bold;
 
 }
 
@@ -49,25 +72,61 @@ i.fa-solid.fa-location-dot {
     padding: 1.5rem 2rem;
     border: 1px solid #dadde1;
     border-radius: 10px;
+    box-shadow: 3px 10px 44px 0 rgba(0, 0, 0, 0.18);
+    background-image: url("../img/pink_green_illus.jpg");
+    background-size: cover;
+    font-weight: bolder;
 }
 
 .description {
     font-size: 20px;
+    color: #fd5382;
+    font-weight: 600;
+}
+
+div.wind {
+    color: #fd5382;
+}
+
+span.wind-span {
+    color: #e0115f;
+}
+
+div.humidity {
+    color: #fd5382;
+}
+
+span.humidity-span {
+    color: #e0115f;
 }
 
 .units-temperature {
     position: relative;
     font-size: 16px;
     top: -4px;
+    color: #e0115f;
 }
 
 .units-temperature:hover {
     cursor: pointer;
 }
 
+.data-units {
+    color: #e0115f;
+}
 
+.day {
+    color: #d397ff;
+    font-weight: bolder;
+}
 
+.temperature {
+    color: #fd5382;
+}
 
+.icon {
+    font-size: larger;
+}
 
 
 
