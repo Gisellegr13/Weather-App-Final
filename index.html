@@ -23,6 +23,7 @@
             href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
             rel="stylesheet"
     />
+
     <!-- Custom CSS -->
     <link href="src/styles.css"/>
     <title>Weather-App</title>
@@ -36,10 +37,11 @@
             <div class="current-temperature">
                 <h1>Brandon</h1>
                 <i class="fa-solid fa-location-dot"></i>
-                <figure>
-                    <img src="img/weather_app.svg" alt="">
-                </figure>
             </div>
+            <div class="figure-cloud-woman">
+                <img class="cloud-woman" src="img/weather_app.svg" alt="">
+            </div>
+
             <!--Current temperature and description display-->
             <div class="row  data-wind-humidity">
                 <div class="col-7">
@@ -53,12 +55,12 @@
                         </small>
                         <!--Current description display-->
                         <div class="description-weather"> ️
-                            <span class="description">Clear Skies</span>
+                            Clear Skies
                         </div>
                     </h2>
                 </div>
                 <!--Current wind and humidity at the right display-->
-                <div class="col-5 mt-5">
+                <div class="col-5 mt-3">
                     <!--Current wind display-->
                     <div class="wind">
                         Wind:
@@ -73,31 +75,31 @@
             </div>
             <!--Forecast temperature display-->
             <section class="container-fluid forecast mt-3">
-                <div class="weekly-prediction">
+                <div class="forecast">
                     <div class="row align-items-center">
                         <div class="col-1 left">
                         </div>
                         <div class="col-2 tomorrow day">Tom
-                            <div class="col-2 temperature">33°</div>
+                            <div class="col-2-sm temperature">33°</div>
                             <div class="col-2 icon">☀️</div>
                         </div>
-                        <div class="col-2 tomorrow+1 day">Tom+1
-                            <div class="col-2 temperature">34°</div>
+                        <div class="col-2 tomorrow+1 day">Tom1
+                            <div class="col-2-sm temperature">34°</div>
                             <div class="col-2 icon">⛅</div>
                         </div>
-                        <div class="col-2 tomorrow+2 day">Tom+2
-                            <div class="col-2 temperature">33°</div>
+                        <div class="col-2 tomorrow+2 day">Tom2
+                            <div class="col-2-sm temperature">33°</div>
                             <div class="col-2 icon">⛅</div>
                         </div>
-                        <div class="col-2 tomorrow+3 day">Tom+3
-                            <div class="col-2 temperature">32°</div>
+                        <div class="col-2 tomorrow+3 day">Tom3
+                            <div class="col-2-sm temperature">32°</div>
                             <div class="col-2 icon">🌧️</div>
                         </div>
-                        <div class="col-2 tomorrow+4 day">Tom+4
-                            <div class="col-2 temperature">32°</div>
+                        <div class="col-2 tomorrow+4 day">Tom4
+                            <div class="col-2-sm temperature">32°</div>
                             <div class="col-2 icon">🌦️</div>
                         </div>
-                        <div class="col-1 right">
+                        <div class="col-1-sm right">
                         </div>
                     </div>
                 </div>

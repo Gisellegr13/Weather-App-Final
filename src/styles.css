@@ -1,5 +1,6 @@
 body {
     font-family: Georgia, Times, "Times New Roman", serif;
+    color: white;
 }
 
 h1 {
@@ -8,7 +9,13 @@ h1 {
     font-family: "Yeseva One", cursive;
     font-weight: 800;
     text-transform: capitalize;
-    color: #fd5382;
+    /*color: #fd5382;*/
+    color: #fedf72;
+}
+
+h2 {
+    position: relative;
+    bottom: 5px;
 }
 
 button {
@@ -18,20 +25,30 @@ button {
     padding: 5px;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+div.figure-cloud-woman {
+    text-align: center;
+}
+
+img.cloud-woman {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+}
+
+img#icon-big {
+    width: 70px;
+    height: 70px;
     padding: 0;
     margin: 0;
 }
 
 i {
-    color: #d397ff;
+    color: #f66f5c;
     margin-left: 0;
     padding: 1px;
 }
 
-i.fa-solid.fa-location-dot, h1 {
+i.fa-solid.fa-location-dot, h1, img.cloud-woman {
     display: inline-block;
     margin: 0 1rem;
     vertical-align: middle;
@@ -45,27 +62,60 @@ i.fa-solid.fa-location-dot:hover {
     cursor: pointer;
 }
 
-span.date {
-    color: #e0115f;
+div.col-2.temperature {
+    text-align: center;
 }
 
-span.hours {
-    color: #e0115f;
+/*span.date {*/
+/*    color: #e0115f;*/
+/*}*/
+
+/*span.hours {*/
+/*    color: #e0115f;*/
+/*}*/
+
+/*span.meridian {*/
+/*    color: #e0115f;*/
+/*}*/
+
+/*input#city-input {*/
+/*    color: #e0115f;*/
+/*}*/
+
+div.wind {
+    /*color: #fd5382;*/
+    margin-bottom: 5px;
+    color: #fedf72;
 }
 
-span.meridian {
-    color: #e0115f;
+span.wind-span {
+    color: white;
 }
 
-input#city-input {
-    color: #e0115f;
+div.humidity {
+    color: #fedf72;
+}
+
+span.humidity-span {
+    /*color: #e0115f;*/
+    color: white;
+}
+
+div.footer {
+
+    /*color: #C06CF0;*/
+    color: #fedf72;
+}
+
+a.githubLink {
+    text-decoration: none;
+    color: #fedf72;
 }
 
 .current-temperature {
     text-align: center;
-    color: #fd5382;
+    /*color: #fd5382;*/
     font-weight: bold;
-
 }
 
 .weather-app-wrapper {
@@ -79,43 +129,30 @@ input#city-input {
     border: 1px solid #dadde1;
     border-radius: 10px;
     box-shadow: 3px 10px 44px 0 rgba(0, 0, 0, 0.18);
-    background-image: url("../img/bright-colorful-sky.jpg");
+    background-image: url("../img/weather-blue-bright.jpg");
     background-size: cover;
     font-weight: bolder;
+    opacity: 0.90;
 }
 
-.description {
-    font-size: 20px;
-    color: #fd5382;
+.description-weather {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    /*color: #fd5382;*/
+    color: #fedf72;
     font-weight: 600;
-}
-
-div.wind {
-    color: #fd5382;
-}
-
-span.wind-span {
-    color: #e0115f;
-}
-
-div.humidity {
-    color: #fd5382;
-}
-
-span.humidity-span {
-    color: #e0115f;
-}
-
-a.githubLink {
-    text-decoration: none;
-    color: #C06CF0;
+    padding-left: 67px;
 }
 
 .units-temperature {
     position: relative;
     font-size: 16px;
     top: -4px;
-    color: #e0115f;
+    font-weight: 600;
+    /*color: #e0115f;*/
+    color: #fedf72;
 }
 
 .units-temperature:hover {
@@ -123,22 +160,30 @@ a.githubLink {
 }
 
 .data-units {
-    color: #e0115f;
+    /*color: #e0115f;*/
+    color: white;
 }
 
-.day {
-    color: #C06CF0;
-    font-weight: bolder;
-}
+/*.day {*/
+/*    color: #C06CF0;*/
+/*    font-weight: bolder;*/
+/*}*/
 
 .temperature {
-    color: #fd5382;
+    /*color: #fd5382;*/
+    color: #fedf72;
+    margin: 0;
 }
 
 .icon {
     font-size: larger;
 }
 
+.prediction {
+    margin: 0 auto;
+    background-color: #50C1DA;
+    opacity: 0.90;
+}
 
 
 
