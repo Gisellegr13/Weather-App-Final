@@ -34,28 +34,24 @@
     <div class="weather-app-wrapper">
         <div class="weather-app ">
             <!--Current city display-->
-            <div class="current-temperature">
-                <h1>Brandon</h1>
+            <div class="current-city">
+                <h1 id="city">Brandon</h1>
                 <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="figure-cloud-woman">
-                <img class="cloud-woman" src="img/weather_app.svg" alt="">
-            </div>
-
             <!--Current temperature and description display-->
-            <div class="row data-wind-humidity">
+            <div class="row data-wind-humidity mt-4">
                 <div class="col-7">
                     <h2>
                         <!-- Icon of temperature description-->
                         <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon-big" class="float-left" alt=""/>
                         <!--Current temperature display-->
-                        <span class="current-temperature">24</span>
+                        <span class="current-temperature"></span>
                         <small class="units-temperature">
                             <span id="Celsius" class="units">°C</span> | <span id="Fahrenheit" class="units">°F</span>
                         </small>
                         <!--Current description display-->
                         <div class="description-weather"> ️
-                            Clear Skies
+                            <span class="description">Clear Sky</span>
                         </div>
                     </h2>
                 </div>

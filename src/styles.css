@@ -24,16 +24,6 @@ button {
     padding: 5px;
 }
 
-div.figure-cloud-woman {
-    text-align: center;
-}
-
-img.cloud-woman {
-    width: 90px;
-    height: 90px;
-    padding: 0;
-}
-
 img#icon-big {
     width: 70px;
     height: 70px;
@@ -82,6 +72,13 @@ span.humidity-span {
     color: white;
 }
 
+div.input-group {
+    width: 18rem;
+    position: relative;
+    left: 2rem;
+    /*padding: 60px;*/
+}
+
 div.footer {
     color: #f66f5c;
 }
@@ -91,17 +88,21 @@ a.githubLink {
     color: #50C1DA;
 }
 
-input#city-input.form-control{
+input#city-input.form-control {
     color: #f66f5c;
 }
 
-.current-temperature {
+.current-city {
     text-align: center;
+
+}
+
+.current-temperature {
     font-weight: bold;
 }
 
 .weather-app-wrapper {
-    max-width: 650px;
+    max-width: 600px;
     height: 700px;
     margin: 50px auto;
 }
