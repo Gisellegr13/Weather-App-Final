@@ -4,11 +4,11 @@ body {
 }
 
 h1 {
+    text-transform: capitalize;
     text-align: center;
     font-size: 30px;
     font-family: "Yeseva One", cursive;
     font-weight: 800;
-    text-transform: capitalize;
     color: #fedf72;
 }
 
@@ -119,6 +119,7 @@ input#city-input.form-control {
 }
 
 .description-weather {
+    text-transform: capitalize;
     position: relative;
     bottom: 10px;
     margin-bottom: 20px;
