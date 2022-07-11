@@ -88,6 +88,10 @@ a.githubLink {
     color: #50C1DA;
 }
 
+i.fa-github {
+    color: #50C1DA;
+}
+
 input#city-input.form-control {
     color: #f66f5c;
 }
@@ -127,7 +131,8 @@ input#city-input.form-control {
     font-weight: 600;
     padding-left: 67px;
 }
-.description-weather:first-letter{
+
+.description-weather:first-letter {
     text-transform: capitalize;
 }
 
