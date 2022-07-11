@@ -91,7 +91,6 @@ input#city-input.form-control {
 
 .current-city {
     text-align: center;
-
 }
 
 .current-temperature {
@@ -147,10 +146,18 @@ input#city-input.form-control {
 
 .temperature {
     margin: 0;
-    font-size: 13px;
-    /*text-align: center;*/
+    font-size: 13.5px;
 
 }
+
+.dayByday{
+    text-align: center;
+}
+
+.max-temp{
+    color: #fedf72;
+}
+
 
 .icon {
     font-size: larger;
