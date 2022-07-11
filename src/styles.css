@@ -51,10 +51,6 @@ i.fa-solid.fa-location-dot:hover {
     cursor: pointer;
 }
 
-div.col-2.temperature {
-    text-align: center;
-}
-
 div.wind {
     margin-bottom: 5px;
     color: #fedf72;
@@ -74,9 +70,6 @@ span.humidity-span {
 
 div.input-group {
     width: 15rem;
-    /*position: relative;*/
-    /*left: 2rem;*/
-    /*padding: 60px;*/
 }
 
 div.footer {
@@ -153,8 +146,10 @@ input#city-input.form-control {
 }
 
 .temperature {
-    color: #fedf72;
     margin: 0;
+    font-size: 13px;
+    /*text-align: center;*/
+
 }
 
 .icon {
