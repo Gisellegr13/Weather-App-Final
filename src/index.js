@@ -139,6 +139,26 @@ function showTempC() {
     changeTemp.innerHTML = Math.round(celsiusTemp);
 }
 
+function currentWeather(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric`;
+
+    axios.get(`${apiUrl}&appid=${apiKey}`).then(showCurrTemp);
+}
+
+function showCurrTemp(response) {
+    displayTemperature(response);
+    let location = response.data.name;
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = `${location}`;
+}
+
+function getCurrentPosition() {
+    navigator.geolocation.getCurrentPosition(currentWeather);
+}
+
 let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
@@ -150,4 +170,7 @@ fahrenheitElement.addEventListener("click", showTempF);
 let celsiusElement = document.querySelector("#Celsius");
 celsiusElement.addEventListener("click", showTempC);
 
-search("Miami");
+let currentIcon = document.querySelector(".current-weather");
+currentIcon.addEventListener("click", getCurrentPosition);
+
+search("brandon")
