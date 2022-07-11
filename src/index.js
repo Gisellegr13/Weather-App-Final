@@ -55,7 +55,9 @@ function displayTemperature(response) {
     let timeElement = document.querySelector(".hours");
     let iconElement = document.querySelector("#icon-big");
 
-    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    celsiusTemp = response.data.main.temp;
+
+    temperatureElement.innerHTML = Math.round(celsiusTemp);
     cityElement.innerHTML = response.data.name;
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
@@ -66,8 +68,39 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description)
 }
 
-let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-let city = "Paris";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value)
+
+}
+
+function showTempF() {
+    let changeTemp = document.querySelector(".current-temperature");
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+    changeTemp.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function showTempC() {
+    let changeTemp = document.querySelector(".current-temperature");
+    changeTemp.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+let fahrenheitElement = document.querySelector("#Fahrenheit");
+fahrenheitElement.addEventListener("click", showTempF);
+
+let celsiusElement = document.querySelector("#Celsius");
+celsiusElement.addEventListener("click", showTempC);
+
+search("Miami");
