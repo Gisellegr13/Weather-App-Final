@@ -73,9 +73,9 @@ span.humidity-span {
 }
 
 div.input-group {
-    width: 18rem;
-    position: relative;
-    left: 2rem;
+    width: 15rem;
+    /*position: relative;*/
+    /*left: 2rem;*/
     /*padding: 60px;*/
 }
 
@@ -161,7 +161,6 @@ input#city-input.form-control {
     background-color: #50C1DA;
     opacity: 0.90;
 }
-
 
 
 
